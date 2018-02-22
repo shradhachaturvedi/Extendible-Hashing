@@ -1,2 +1,3 @@
 # Extendible-Hashing
-Type of dynamic hashing algorithm which consists of directory doubling and block splitting
+Hash Function used in both the schemes gives out a hash value (as binary string), and certain number of bits are used to determine the index of destination block for a given key (and its value).
+The number of bits “I” used from the hash value is gradually increased as and when the hash table is resized, and more block(s) are added to the hash table. If the number of bits representing the directory is equal to the number of bits representing the block, if the bucket becomes full, directory is double. Whereas, a target block B will be split into B and B*, and the contents of B will be rehashed between B and B* if the bits representing the block is lesser than the number of bits representing the directory.
